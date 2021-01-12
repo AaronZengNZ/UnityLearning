@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: W1-1.DigFail
+  m_EditorClassIdentifier: 
+  storyText: 'You can''t dig away. Didn''t I say the ground feels like clay? Also,
+    the ''thing'' is rising up to the surface.
+
+
+    You don''t wanna die, right?
+
+    1.
+    Fine, run away.
+
+'
+  nextStates:
+  - {fileID: 11400000, guid: a99fd7c4f81b8824da31ee17ba4d6a00, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

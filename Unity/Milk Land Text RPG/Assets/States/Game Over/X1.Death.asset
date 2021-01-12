@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: X1.Death
+  m_EditorClassIdentifier: 
+  storyText: 'Okay, so you died.
+
+    Bad luck!
+
+    Now for a game of chance...
+
+
+    1.
+    Probably not something bad.
+
+    2. Definitly something good.
+
+    3. Press this
+    and you''ll die.'
+  nextStates:
+  - {fileID: 11400000, guid: 57490a561ab4db94bbd6d5047a42883f, type: 2}
+  - {fileID: 11400000, guid: 809b8d59b51fae846bd55cffd5cef9ef, type: 2}
+  - {fileID: 11400000, guid: 063a0369916f108469e0c727a0d5a246, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

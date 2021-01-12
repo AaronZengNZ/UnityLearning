@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: A2.ms.e-dagger
+  m_EditorClassIdentifier: 
+  storyText: 'You exit the milksmith shop, wielding your newfound weapon. You see
+    something bright in the distance.
+
+
+    It seems like a ball of milk... or something.
+    Probably shouldn''t touch it.
+
+
+    What to do next?
+
+    1. Try to consume it.
+
+    2.
+    Touch It.
+
+    3. Stay right where you are.'
+  nextStates:
+  - {fileID: 11400000, guid: 0c4f015364485784298cb2f962454195, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

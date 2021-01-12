@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: W1-3.ShopFail
+  m_EditorClassIdentifier: 
+  storyText: 'You can''t get into the shop. Didn''t you know that the entrance was
+    just in front of the river?
+
+
+    Though the monster seems weak.
+
+
+    What now?
+
+    1.
+    Take a rest.
+
+    2. Run away.'
+  nextStates:
+  - {fileID: 11400000, guid: 2df837895f7fb6b4e80426efa8f8862c, type: 2}
+  - {fileID: 11400000, guid: 171187e1faeafe741a7a7499c8c58de8, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

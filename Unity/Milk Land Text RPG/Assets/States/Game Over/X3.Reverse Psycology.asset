@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: X3.Reverse Psycology
+  m_EditorClassIdentifier: 
+  storyText: 'Ha ha, so you fell for a bit of reverse psycology!
+
+    What a noob.
+
+
+    Okay,
+    so this will be the final chance. The FINAL chance.
+
+
+    1. It''s not me, It''s
+    three!
+
+    2. Number one is lying!
+
+    3. Number two is lying!'
+  nextStates:
+  - {fileID: 11400000, guid: 19ddd61fc4f25624998b795b0ff34827, type: 2}
+  - {fileID: 11400000, guid: 8a726dec6f0b7ae44b7713dc5d0ce908, type: 2}
+  - {fileID: 11400000, guid: 8a726dec6f0b7ae44b7713dc5d0ce908, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

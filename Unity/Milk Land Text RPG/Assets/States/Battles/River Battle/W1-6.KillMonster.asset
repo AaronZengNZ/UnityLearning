@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: W1-6.KillMonster
+  m_EditorClassIdentifier: 
+  storyText: 'Okay, so you penetrated a hole in the carton of orange juice.
+
+    You
+    take the straw from it''s back - a katana is sheathed inside.
+
+    You ponder
+    about what just happened.
+
+
+    What to do now?
+
+    1. Question the milksmith.
+
+    2.
+    Follow the river.'
+  nextStates:
+  - {fileID: 11400000, guid: c4898726378e62742ae6ab25407b36d1, type: 2}
+  - {fileID: 11400000, guid: 53d491548b4636e438c4f9055cf39864, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

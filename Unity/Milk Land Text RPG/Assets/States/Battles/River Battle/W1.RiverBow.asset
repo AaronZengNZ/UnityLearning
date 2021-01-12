@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: W1
+  m_EditorClassIdentifier: 
+  storyText: 'The creature in the river growls at you. Are you sure you want to stay
+    here?
+
+
+    The bow starts glowing.
+
+
+    What?
+
+    1. Run away.
+
+    2. Dig
+    away.
+
+    3. Stay right here.'
+  nextStates:
+  - {fileID: 11400000, guid: a99fd7c4f81b8824da31ee17ba4d6a00, type: 2}
+  - {fileID: 11400000, guid: 3b60ca1f6f4b6474dbad167238061258, type: 2}
+  - {fileID: 11400000, guid: 2671c43710c3a4d43b580920c304e070, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

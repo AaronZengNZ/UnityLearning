@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c7ce14f0d4f04ab9ed66928134b78, type: 3}
+  m_Name: A1.Dani's Milksmith
+  m_EditorClassIdentifier: 
+  storyText: 'You enter Dani''s milksmith shop.
+
+    He offers you a free weapon
+    from the shelves.
+
+
+
+    A golden dagger lays on the top of the shelf; it seems
+    very sharp.
+
+    Mysterious books covered in runes are stacked in the shelf,
+
+    And
+    a black bow is covered by the books.
+
+
+
+    What do you do?
+
+    1. Take the
+    dagger.
+
+    2. Question about the books.
+
+    3. Grab the bow.'
+  nextStates:
+  - {fileID: 11400000, guid: f4d02ea168e03d046b6b01096bc6c811, type: 2}
+  - {fileID: 11400000, guid: 8108966e17ebabb4a98239ac34085fe4, type: 2}
+  - {fileID: 11400000, guid: 67c381152a3c09744a89bf66463a2ab6, type: 2}
+  - {fileID: 11400000, guid: 9c60e76444c27eb46ba2defa0fe98feb, type: 2}

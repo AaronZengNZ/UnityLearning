@@ -1,0 +1,11 @@
+You enter Dani's milksmith shop.
+He offers you a free weapon from the shelves.
+
+A golden dagger lays on the top of the shelf; it seems very sharp.
+Mysterious books covered in runes are stacked in the shelf,
+And a black bow is covered by the books.
+
+What do you do?
+1. Take the dagger.
+2. Question about the books.
+3. Grab the bow.
