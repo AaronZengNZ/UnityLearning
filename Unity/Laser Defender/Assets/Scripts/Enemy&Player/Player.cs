@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
     [SerializeField] int health = 200;
+    [SerializeField] int shield = 200;
 
     [Header("VFX and SFX")]
     [SerializeField] AudioClip deathSFX;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField] [Range(0, 1)] float hitSFXVolume = 0.4f;
     [SerializeField] AudioClip shootBombSFX;
     [SerializeField] [Range(0, 1)] float shootBombSFXVolume = 0.45f;
+    [SerializeField] AudioClip shieldDestroySFX;
+    [SerializeField] [Range(0, 1)] float shieldDestroySFXVolume = 0.4f;
 
     [Header("Projectiles")]
     [SerializeField] GameObject laserPrefab;
@@ -51,16 +54,36 @@ public class Player : MonoBehaviour
     {
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
         if (!damageDealer) { return; }
+        if (damageDealer.GetDamage() < 0)
+        {
+            shield -= damageDealer.GetDamage();
+            damageDealer.Hit();
+            return;
+        }
         ProcessHit(damageDealer);
 
     }
 
     private void ProcessHit(DamageDealer damageDealer)
     {
-        health -= damageDealer.GetDamage();
+        if (shield > 0)
+        {
+            shield -= damageDealer.GetDamage();
+            if (shield <= 0)
+            {
+                shield = 0;
+                AudioSource.PlayClipAtPoint(shieldDestroySFX, Camera.main.transform.position, shieldDestroySFXVolume);
+            }
+        }
+        else
+        {
+            health -= damageDealer.GetDamage();
+        }
         damageDealer.Hit();
+        
         if (health <= 0)
         {
+            health = 0;
             Die();
         }
         else
@@ -79,6 +102,11 @@ public class Player : MonoBehaviour
     public int GetHealth()
     {
         return health;
+    }
+
+    public int GetShield()
+    {
+        return shield;
     }
 
     private void Fire()

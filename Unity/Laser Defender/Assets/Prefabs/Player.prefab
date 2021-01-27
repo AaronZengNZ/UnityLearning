@@ -99,15 +99,23 @@ MonoBehaviour:
   moveSpeed: 10
   padding: 0.3
   health: 300
+  shield: 200
   deathSFX: {fileID: 8300000, guid: 1d453d1a6d7016046bd56c27a23653af, type: 3}
   deathSFXVolume: 0.65
   shootSFX: {fileID: 8300000, guid: fe427e4cd93f0e2489136d739dd0c784, type: 3}
   shootSFXVolume: 0.07
   hitSFX: {fileID: 8300000, guid: 94bbe35ee6ec1ae4c83814181200e1e3, type: 3}
-  hitSFXVolume: 0.4
+  hitSFXVolume: 0.25
+  shootBombSFX: {fileID: 8300000, guid: 9f97d710b90ebbd468e529f42df83a38, type: 3}
+  shootBombSFXVolume: 0.45
+  shieldDestroySFX: {fileID: 8300000, guid: 94bbe35ee6ec1ae4c83814181200e1e3, type: 3}
+  shieldDestroySFXVolume: 0.4
   laserPrefab: {fileID: 1140034268772627425, guid: a45a91fde684faf48892a6725d5aca73, type: 3}
   projectileSpeed: 20
   projectileFiringPeriod: 0.08
+  bombPrefab: {fileID: 1140034268772627425, guid: 6abd5d2863e8a6446a9cc3f0ff03ec20, type: 3}
+  bombSpeed: 6
+  bombFiringPeriod: 3
 --- !u!60 &6710872419529351021
 PolygonCollider2D:
   m_ObjectHideFlags: 0
