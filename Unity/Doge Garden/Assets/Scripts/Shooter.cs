@@ -4,22 +4,36 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject projectile, gun;
-    
+    AttackerSpawner myLaneSpawner;
+    Animator animator;
+    GameObject projectileParent;
+    const string PROJECTILE_PARENT_NAME = "Projectiles";
+
     private void Start()
     {
         SetLaneSpawner();
+        animator = GetComponent<Animator>();
+        CreateProjectileParent();
+    }
+
+    private void CreateProjectileParent()
+    {
+        projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
+        if (!projectileParent)
+        {
+            projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
+        }
     }
 
     private void Update()
     {
         if (IsAttackerInLane())
         {
-            //do something
+            animator.SetBool("IsAttacking", true);
         }
         else
         {
-            //bye bye, me sleep
+            animator.SetBool("IsAttacking", false);
         }
     }
 
@@ -29,14 +43,38 @@ public class Shooter : MonoBehaviour
 
         foreach (AttackerSpawner spawner in spawners)
         {
-
+            bool IsCloseEnough = 
+                (Mathf.Abs(spawner.transform.position.y - (transform.position.y - 0.25f)) 
+                <= Mathf.Epsilon);
+            if (IsCloseEnough)
+            {
+                myLaneSpawner = spawner;
+            }
         }
     }
 
-    public void Fire()
+    private bool IsAttackerInLane()
     {
-        Instantiate(projectile, gun.transform.position, Quaternion.AngleAxis(180, Vector3.up));
+        if (myLaneSpawner)
+        {
+            if (myLaneSpawner.transform.childCount <= 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        else
+        {
+            return false;
+        }
     }
 
+    public void ProjectileTransferChild(GameObject projectile)
+    {
+        projectile.transform.parent = projectileParent.transform;
+    }
 
 }

@@ -1,11 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DefenderButton : MonoBehaviour
 {
     [SerializeField] Defender DefenderPrefab;
-    [SerializeField] bool isCheems = false;
+
+    private void Start()
+    {
+        LabelButtonWithCost();
+    }
+
+    private void LabelButtonWithCost()
+    {
+        Text costText = GetComponentInChildren<Text>();
+        if (!costText)
+        {
+            Debug.LogError(name + " has no cost text, add a cost text!");
+        }
+        else
+        {
+            costText.text = DefenderPrefab.GetDcoinCost().ToString();
+        }
+    }
 
     private void OnMouseDown()
     {
@@ -15,6 +33,6 @@ public class DefenderButton : MonoBehaviour
             button.GetComponent<SpriteRenderer>().color = new Color32(67, 67, 67, 255);
         }
         GetComponent<SpriteRenderer>().color = Color.white;
-        FindObjectOfType<DefenderSpawner>().SetSelectedDefender(DefenderPrefab, isCheems);
+        FindObjectOfType<DefenderSpawner>().SetSelectedDefender(DefenderPrefab);
     }
 }

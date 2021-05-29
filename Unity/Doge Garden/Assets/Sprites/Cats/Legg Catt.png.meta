@@ -117,7 +117,7 @@ TextureImporter:
         width: 61
         height: 195
       alignment: 9
-      pivot: {x: 0.40005028, y: 0.01537181}
+      pivot: {x: 0.28796563, y: 0.225}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
         width: 68
         height: 196
       alignment: 9
-      pivot: {x: 0.43275452, y: 0.017844388}
+      pivot: {x: 0.36526993, y: 0.225}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: Legg Catt_2
       rect:
         serializedVersion: 2
-        x: 135
+        x: 133
         y: 2
         width: 86
         height: 196
       alignment: 9
-      pivot: {x: 0.5354474, y: 0.010067688}
+      pivot: {x: 0.4874672, y: 0.225}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +180,7 @@ TextureImporter:
         width: 98
         height: 195
       alignment: 9
-      pivot: {x: 0.46889356, y: 0.03100496}
+      pivot: {x: 0.4175122, y: 0.225}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Legg Catt_4
       rect:
         serializedVersion: 2
-        x: 325
+        x: 323
         y: 2
         width: 86
         height: 196
       alignment: 9
-      pivot: {x: 0.35821107, y: 0.017844388}
+      pivot: {x: 0.32453775, y: 0.225}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +222,7 @@ TextureImporter:
         width: 59
         height: 196
       alignment: 9
-      pivot: {x: 0.44833168, y: 0.0022909883}
+      pivot: {x: 0.4086583, y: 0.225}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

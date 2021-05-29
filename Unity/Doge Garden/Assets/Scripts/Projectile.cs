@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float speed = 2f;
     [SerializeField] float damage = 50f;
     [SerializeField] GameObject projectileBoomVFX;
+    [SerializeField] bool isCannonball = false;
 
     void Update ()
     {
@@ -23,7 +24,14 @@ public class Projectile : MonoBehaviour
         {
             health.DealDamage(damage);
             TriggerBoomVFX();
-            Destroy(gameObject);
+            if (!isCannonball)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
