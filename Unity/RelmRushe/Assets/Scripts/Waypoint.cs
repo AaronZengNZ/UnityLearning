@@ -11,14 +11,14 @@ public class Waypoint : MonoBehaviour
     public bool IsPlaceable { get { return isPlaceable; } }
 
     // Start is called before the first frame update
-    void OnMouseDown()
-    {
-        if (isPlaceable)
-        {
-            bool isPlaced = tower.CreateTower(towerPrefab, transform.position);
-            isPlaceable = !isPlaced;
-        }
-    }   
+   // void OnMouseDown()
+    //{
+    //    if (isPlaceable)
+    //    {
+    //        bool isPlaced = tower.CreateTower(towerPrefab, transform.position);
+   ///         isPlaceable = !isPlaced;
+   //     }
+///}   
 
     void OnCollisionStay()
     {
