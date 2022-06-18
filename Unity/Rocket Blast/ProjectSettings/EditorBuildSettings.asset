@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Fly Between.unity
+    guid: d82e12bf4ff051443a188726dedc400a
+  - enabled: 0
+    path: Assets/Scenes/FlyOver.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Starter Level.unity
+    guid: a3e8f11ece690ec45ad2ab2fbc1271c8
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 385e505b4b8c2814aa22afdc6f9e87fd
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: f4c65a49d9e16f1449da79cf8bb2b77a
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 4577e0a0ceadaa84f96a0c1904a579d1
+  - enabled: 1
+    path: Assets/Scenes/Big level.unity
+    guid: b0e19821587a2ef4bb8a3f27c98fb213
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 04e39e367759b9c4195bf533a29e98bc
+  - enabled: 1
+    path: Assets/Scenes/The end.unity
+    guid: 0886b6b63de90d845a5beade55c02649
+  - enabled: 1
+    path: Assets/Scenes/You win.unity
+    guid: 6a647901ed27dd748a5b9a619d73115f
+  m_configObjects: {}

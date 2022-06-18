@@ -39,7 +39,6 @@ public class Player : MonoBehaviour
             myRigidBody.gravityScale = 2f;
             return; 
         }
-
         ClimbLadder();
         Run();
         FlipSprite();
