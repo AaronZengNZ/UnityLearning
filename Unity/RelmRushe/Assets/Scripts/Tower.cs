@@ -13,7 +13,6 @@ public class Tower : MonoBehaviour
 
         if(bank == null)
         {
-            Debug.Log("could not find bank");
             return false;
         }
 
