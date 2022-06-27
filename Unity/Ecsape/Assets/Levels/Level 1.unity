@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: deathKick.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 410661913352720896, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 973aaa0b8ef6018419c7fa798c45d68b, type: 2}
     - target: {fileID: 410661913352720908, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
       propertyPath: m_RootOrder
       value: 1

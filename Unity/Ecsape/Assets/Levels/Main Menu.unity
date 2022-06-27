@@ -277,19 +277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1556050519, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
       propertyPath: jumpHeight
-      value: 26.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1556050519, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
-      propertyPath: deathKick.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1556050519, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
-      propertyPath: deathKick.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 410661913352720896, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
-      propertyPath: m_GravityScale
-      value: 10
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 410661913352720908, guid: b27731a79e29c5140abf2f5f11a8eec9, type: 3}
       propertyPath: m_RootOrder
@@ -592,7 +580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -21.791431, y: 49.360397}
+  m_AnchoredPosition: {x: -21.791382, y: 49.360413}
   m_SizeDelta: {x: -509.4676, y: -365.7473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1004982056
@@ -13306,7 +13294,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -289922587
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

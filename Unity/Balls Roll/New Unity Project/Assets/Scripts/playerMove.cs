@@ -7,6 +7,7 @@ public class playerMove : MonoBehaviour
     public float speed = 12;
     public float gravity = -25;
     public float multiplier = 1;
+    public float sprintMultiplier = 2f;
     float velocityY = 0;
 
     CharacterController controller;
@@ -32,8 +33,8 @@ public class playerMove : MonoBehaviour
         temp += transform.right * input.x;
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            temp += transform.forward * input.z / 2;
-            temp += transform.right * input.x / 2;
+            temp += transform.forward * input.z / (1 / (sprintMultiplier - 1));
+            temp += transform.right * input.x / (1 / (sprintMultiplier - 1));
         }
 
         Vector3 velocity = temp * speed;

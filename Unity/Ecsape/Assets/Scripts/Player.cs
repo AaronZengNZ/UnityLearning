@@ -75,12 +75,16 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
                 Vector2 jumpVelocityToAdd = new Vector2(0f, jumpHeight);
-                myRigidBody.velocity += jumpVelocityToAdd;
+            if (myRigidBody.velocity.y < 0)
+            {
+                myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0f);
+            }
+            myRigidBody.velocity += jumpVelocityToAdd;
+
         }
     }
 
