@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             velocityY = 0;
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                velocityY = 15;
+                velocityY = 22;
             }
         }
     }

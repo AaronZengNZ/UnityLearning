@@ -10,7 +10,7 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] int poolSizeIncreaseAmount = 1;
     [SerializeField] float intervalBetweenEachPoolSizeIncrease = 5f;
     int currentPoolSize;
-    [SerializeField] float spawnTimer = 3f;
+    [SerializeField] float spawnTimer = 2f;
 
     GameObject[] pool;
 

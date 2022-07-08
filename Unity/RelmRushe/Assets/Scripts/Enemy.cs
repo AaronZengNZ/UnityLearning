@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] int goldReward = 50;
+
     [SerializeField] int goldPenalty = 100;
 
     [SerializeField] Bank bank;
