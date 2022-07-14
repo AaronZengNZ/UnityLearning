@@ -9860,7 +9860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721a56f2bb367c8409df2e790de83d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.75
+  Speed: 0.9
 --- !u!114 &8778550622523728755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9873,11 +9873,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06bb01740beff964eb5290147dd5e644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
+  maxHP: 5
   label: {fileID: 4369506970937805106}
   playerGun: {fileID: 0}
   deathfx: {fileID: 1138703683112865256}
-  difficultyRound: 2
+  difficultyRound: 3
   explosion: {fileID: 8981408906787048322}
 --- !u!114 &6833856145722706592
 MonoBehaviour:

@@ -23,6 +23,12 @@ public class ObjectPool : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(WaitAndSpawn());
+    }
+
+    IEnumerator WaitAndSpawn()
+    {
+        yield return new WaitForSeconds(3f);
         StartCoroutine(SpawnEnemy());
         StartCoroutine(IncreasePoolSize());
     }

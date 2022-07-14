@@ -16,9 +16,8 @@ public class EnemyMover : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        RecalculatePath();
         ReturnToStart();
-        StartCoroutine(FollowPath());
+        RecalculatePath(true);
     }
 
     void Awake()
@@ -28,18 +27,30 @@ public class EnemyMover : MonoBehaviour
         pathfinder = FindObjectOfType<Pathfinding>();
     }
         
-    void ReturnToStart()
+    void ReturnToStart()  
     {
 
             transform.position = gridManager.GetPositionFromCoordinates(pathfinder.StartCoordinates);
 
     }
 
-    void RecalculatePath()
+    void RecalculatePath(bool resetPath)
     {
+        Vector2Int coordinates = new Vector2Int();
+
+        if (resetPath)
+        {
+            coordinates = pathfinder.StartCoordinates;
+        }
+        else
+        {
+            coordinates = gridManager.GetCoordinatesFromPosition(transform.position);
+        }
+
+        StopAllCoroutines();
         path.Clear();
-        path = pathfinder.GetNewPath();
-        Debug.Log("recalculated path");
+        path = pathfinder.GetNewPath(coordinates);
+        StartCoroutine(FollowPath());
     }
 
     void FinishPath()
@@ -53,7 +64,7 @@ public class EnemyMover : MonoBehaviour
     // Update is called once per frame
     IEnumerator FollowPath()
     {
-        for(int i = 0; i < path.Count; i++)
+        for(int i = 1; i < path.Count; i++)
         {
             Vector3 startPosition = transform.position;
             Vector3 endPosition = new Vector3(gridManager.GetPositionFromCoordinates(path[i].coordinates).x, gridManager.GetPositionFromCoordinates(path[i].coordinates).z + 5, gridManager.GetPositionFromCoordinates(path[i].coordinates).y);

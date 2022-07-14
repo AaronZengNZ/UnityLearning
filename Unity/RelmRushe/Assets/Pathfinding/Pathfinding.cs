@@ -39,10 +39,16 @@ public class Pathfinding : MonoBehaviour
         GetNewPath();
     }
 
-    public List<Node> GetNewPath()
+    public List<Node> GetNewPath() 
+    {
+    
+        return GetNewPath(startCoordinates);
+    }
+
+    public List<Node> GetNewPath(Vector2Int coordinates)
     {
         gridManager.ResetNodes();
-        BreadthFirstSearch();
+        BreadthFirstSearch(coordinates);
         return BuildPath();
 
     }
@@ -72,18 +78,19 @@ public class Pathfinding : MonoBehaviour
         }
     }
 
-    void BreadthFirstSearch()
+    void BreadthFirstSearch(Vector2Int coordinates)
     {
         startNode.isWalkable = true;
         destinationNode.isWalkable = true;
+
         frontier.Clear();
         reached.Clear();
 
 
         bool isRunning = true;
 
-            frontier.Enqueue(startNode);
-            reached.Add(startCoordinates, startNode);
+        frontier.Enqueue(grid[coordinates]);
+        reached.Add(coordinates, grid[coordinates]);
 
             while (frontier.Count > 0 && isRunning)
             {
@@ -140,6 +147,6 @@ public class Pathfinding : MonoBehaviour
 
     public void NotifyReceivers()
     {
-        BroadcastMessage("RecalculatePath", SendMessageOptions.DontRequireReceiver);
+        BroadcastMessage("RecalculatePath", false, SendMessageOptions.DontRequireReceiver);
     }
 }
