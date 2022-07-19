@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
         playerHealth -= damage;
         if (playerHealth <= 0)
         {
-            Debug.Log("oof");
+            GetComponent<DeathHandler>().HandleDeath();
         }
     }
 }
