@@ -25,7 +25,7 @@ public class Weapon : MonoBehaviour
     {
         canShoot = true;
     }
-
+ 
     void Update()
     {
         DisplayAmmo();
