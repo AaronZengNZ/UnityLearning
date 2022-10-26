@@ -6,6 +6,69 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 890d48d99f7fdf840bb4bed6db7190fc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Level.unity
+    guid: 6d0217c4ba0a34c4697bbd2bf46d6bf6
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 42087a7da9bd5f7458ccc6d6d6180436
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: a3fb8672b5930d74f91341978b0bd2b1
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: f87ecf0c0c72c564fb63313575dca6da
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: bd05d9ab7beb0d448aecdadbfdfead0b
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: d3e898bfd3d12da4cae5e9169e75bf5e
+  - enabled: 1
+    path: Assets/Scenes/RedTransition 1.unity
+    guid: d1c62f196a5d3334ebc3bd0cfee22146
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: aaf56896fc4bf38419c3709e4b34b1c3
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: bf146539bf0ba304fa72cddb9f95bb75
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: b6e819c5da8f83444bc21c3255a04126
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: e747c0ec51c36f1478c209a9c6130894
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: 11ca0be38586da04f9457e91fdfab6ce
+  - enabled: 1
+    path: Assets/Scenes/OrangeTransition.unity
+    guid: 5a37317369dfbe345b5706eaedbb363b
+  - enabled: 1
+    path: Assets/Scenes/Level 11.unity
+    guid: aec6b185e14447048af0d1904063d25d
+  - enabled: 1
+    path: Assets/Scenes/Level 12.unity
+    guid: e076393e38711bb40974187d7c5a3223
+  - enabled: 1
+    path: Assets/Scenes/Level 13.unity
+    guid: 278cd17cefe8df844927aa1218e082a6
+  - enabled: 1
+    path: Assets/Scenes/Level 14.unity
+    guid: c3a1e2d5dcced8b4d8e2842d6a0b02b2
+  - enabled: 1
+    path: Assets/Scenes/Level 15.unity
+    guid: 841910fae0f4e1b4cb151e1e5bde4ef9
+  - enabled: 1
+    path: Assets/Scenes/Yellow Bossfight.unity
+    guid: 8269ed40d0cd3e047a7a20a9032ef0fb
+  - enabled: 1
+    path: Assets/Scenes/YellowTransition.unity
+    guid: 071d1afb56bc9a44ca13d72658849d5e
   m_configObjects: {}

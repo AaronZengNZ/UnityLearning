@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8483359666542943078}
   - component: {fileID: 8483359666542943079}
   - component: {fileID: 8483359666542942360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Outer Collision Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
